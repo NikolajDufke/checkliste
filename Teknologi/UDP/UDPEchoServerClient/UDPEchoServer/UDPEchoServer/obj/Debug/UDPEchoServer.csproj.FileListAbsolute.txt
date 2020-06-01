@@ -1,0 +1,19 @@
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.exe.config
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.exe
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.pdb
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.csprojResolveAssemblyReference.cache
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.exe
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.pdb
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.exe.config
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.exe
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.pdb
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.csprojAssemblyReference.cache
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.csproj.CoreCompileInputs.cache
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.exe
+C:\D Drive\Undervisning\CodsC#\Solutions\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.pdb
+C:\Users\Master\Desktop\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.exe.config
+C:\Users\Master\Desktop\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.exe
+C:\Users\Master\Desktop\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\bin\Debug\UDPEchoServer.pdb
+C:\Users\Master\Desktop\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.csprojAssemblyReference.cache
+C:\Users\Master\Desktop\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.exe
+C:\Users\Master\Desktop\UDPEchoServerClient\UDPEchoServer\UDPEchoServer\obj\Debug\UDPEchoServer.pdb
