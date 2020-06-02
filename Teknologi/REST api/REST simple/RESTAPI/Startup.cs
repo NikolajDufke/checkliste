@@ -55,7 +55,9 @@ namespace RESTAPI
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAnyOrigin", builder => builder.AllowAnyOrigin());
-                options.AddPolicy("AllowMyLocalOrigin", builder => builder.WithOrigins("http://localhost:3000")); //indsæt dit eget local host link
+                options.AddPolicy("AllowMyLocalOrigin", builder => builder.WithOrigins("http://localhost:3000"));//indsæt dit eget local host link
+                options.AddPolicy("AllowAllOrigin", builder => builder.WithOrigins("*").AllowAnyHeader().AllowAnyMethod());
+                options.AddPolicy("AllowGETOrigin", builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader().WithMethods("GET", "POST"));
                 options.AddPolicy("AllowGetPost", builder=> builder.AllowAnyOrigin().WithMethods("GET", "POST"));
             });
         }
@@ -74,7 +76,9 @@ namespace RESTAPI
             );
 
             //app.UseCors("AllowAnyOrigin");
-            app.UseCors("AllowMyLocalOrigin");
+            app.UseCors("AllowAllOrigin");
+            //app.UseCors("AllowGETOrigin");
+            //app.UseCors("AllowMyLocalOrigin");
             //app.UseCors("AllowGetPost");
 
             app.UseMvc();

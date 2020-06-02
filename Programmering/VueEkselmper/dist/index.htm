@@ -4,20 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Coding Template</title>
   <link rel="stylesheet" type="text/css" href="bundle.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
   <h1>Webpack - TypeScript - Scss</h1>
   <h2>TypeScript Hello World</h2>  
-  <div id="app"></div>
-    
-
-    <ul >
+  <div id="app">
+  
+    <ul v-for="bil in biler">
       <li>
-        test
+        {{bil.id}}
+        {{bil.mærke}}
       </li>
     </ul>
 
+    <button v-on:click="AddACar">Add a car</button>
+
+  </div>
   <script src="bundle.js"></script>
 </body>
 </html>

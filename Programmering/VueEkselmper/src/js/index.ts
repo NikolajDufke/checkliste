@@ -1,15 +1,9 @@
-interface Person {
-    firstName: string;
-    lastName: string;
-}
+import Axios, {
+    AxiosResponse,
+    AxiosError
+} from "../../node_modules/axios/index";
 
-function greeter(person: Person): string {
-    return "Hello, " + person.firstName + " " + person.lastName;
-}
-let user: Person = { firstName: "John", lastName: "Doe" };
-
-let element: HTMLDivElement = <HTMLDivElement> document.getElementById("content");
-element.innerHTML = greeter(user);
+let baseurl : string = "http://localhost:58040/api/LocalList"
 
 interface Bil {
     id: number;
@@ -19,6 +13,35 @@ interface Bil {
 
 new Vue({
     el: "#app",
-    data: 
-    
+    data: {
+        biler:[],
+    },
+    created() {
+        this.getAllCars()
+    },
+    methods: {
+        AddACar(){
+         Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+         Axios.post(baseurl, {id:4, mærke: "m4"}).then(
+              (response: AxiosResponse) => console.log(response.status)
+          ).catch(
+              (Error: AxiosError) => {
+                  console.log(Error.message)
+              }
+          )
+        },
+
+        getAllCars(){
+            Axios.get(baseurl).then(
+               (Response: AxiosResponse<Bil[]>) => {
+                   this.biler = Response.data
+                   console.log(this.biler)
+               }
+            ).catch((Error: AxiosError) => {
+                console.log(Error.message)
+            }
+            )
+        }
+    },
+
 })
