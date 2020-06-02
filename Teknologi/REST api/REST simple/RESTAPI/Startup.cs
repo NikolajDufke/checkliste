@@ -51,6 +51,13 @@ namespace RESTAPI
                     }
                 );
             });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAnyOrigin", builder => builder.AllowAnyOrigin());
+                options.AddPolicy("AllowMyLocalOrigin", builder => builder.WithOrigins("http://localhost:3000")); //indsæt dit eget local host link
+                options.AddPolicy("AllowGetPost", builder=> builder.AllowAnyOrigin().WithMethods("GET", "POST"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,6 +72,10 @@ namespace RESTAPI
             app.UseSwaggerUI(c =>
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Music Records API v1.0")
             );
+
+            //app.UseCors("AllowAnyOrigin");
+            app.UseCors("AllowMyLocalOrigin");
+            //app.UseCors("AllowGetPost");
 
             app.UseMvc();
         }
