@@ -1,1 +1,5 @@
 https://github.com/dimselab/Webpack-template
+
+convert json to ts interface
+
+http://json2ts.com/
