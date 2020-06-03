@@ -10,11 +10,12 @@ interface Bil {
     mærke: string;
 }
 
-
 new Vue({
     el: "#app",
     data: {
         biler:[],
+        inputId: 0,
+        inputMærke: "",
     },
     created() {
         this.getAllCars()
@@ -22,7 +23,7 @@ new Vue({
     methods: {
         AddACar(){
          Axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-         Axios.post(baseurl, {id:4, mærke: "m4"}).then(
+         Axios.post(baseurl, {id: this.inputId, mærke: this.inputMærke}).then(
               (response: AxiosResponse) => console.log(response.status)
           ).catch(
               (Error: AxiosError) => {

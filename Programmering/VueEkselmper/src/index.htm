@@ -1,17 +1,36 @@
 <!doctype html>
 <html lang="en-US">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Coding Template</title>
   <link rel="stylesheet" type="text/css" href="bundle.css">
+
+  <!-- vue implementation -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <!-- Bootstrap implementation -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <h1>Webpack - TypeScript - Scss</h1>
-  <h2>TypeScript Hello World</h2>  
+  <h2>TypeScript Hello World</h2>
   <div id="app">
-  
+
     <ul v-for="bil in biler">
       <li>
         {{bil.id}}
@@ -19,9 +38,32 @@
       </li>
     </ul>
 
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Mærke</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="bil in biler">
+          <th>{{bil.id}}</th>
+          <td> {{bil.mærke}}</td>
+        </tr>
+      </tbody>
+    </table>
+
     <button v-on:click="AddACar">Add a car</button>
+
+    <div>
+      <p> Id</p>
+      <input v-model="inputId">
+      <p>Mærke</p>
+      <input v-model="inputMærke">
+    </div>
 
   </div>
   <script src="bundle.js"></script>
 </body>
+
 </html>
