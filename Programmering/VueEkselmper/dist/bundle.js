@@ -2074,6 +2074,8 @@ new Vue({
     el: "#app",
     data: {
         biler: [],
+        inputId: 0,
+        inputMærke: "",
     },
     created: function () {
         this.getAllCars();
@@ -2081,7 +2083,7 @@ new Vue({
     methods: {
         AddACar: function () {
             _node_modules_axios_index__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-            _node_modules_axios_index__WEBPACK_IMPORTED_MODULE_0___default.a.post(baseurl, { id: 4, mærke: "m4" }).then(function (response) { return console.log(response.status); }).catch(function (Error) {
+            _node_modules_axios_index__WEBPACK_IMPORTED_MODULE_0___default.a.post(baseurl, { id: this.inputId, mærke: this.inputMærke }).then(function (response) { return console.log(response.status); }).catch(function (Error) {
                 console.log(Error.message);
             });
         },
