@@ -53,7 +53,14 @@
       </tbody>
     </table>
 
+
+    <div>
+      <input type="text" placeholder="Search.." name="search" v-model="inputTypeSearch">
+      <button type="submit button" class="btm btn-dark" v-on:click="SearchByType"> Search</i></button>
+    </div>
+
     <button v-on:click="AddACar">Add a car</button>
+    <button v-on:click="getAllCars">Get All Cars</button>
 
     <div>
       <p> Id</p>

@@ -22,10 +22,17 @@ namespace RESTAPI.Controllers
         }
 
         // GET: api/LocalList/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetId")]
         public Bil Get(int id)
         {
             return Biler.FirstOrDefault(x => x.Id == id);
+        }
+
+        [HttpGet("{mærke}", Name = "GetMærke")]
+        [Route("GetMærke/{mærke}")]
+        public IEnumerable<Bil> GetMærkeBil(string mærke)
+        {
+            return Biler.FindAll(x => x.Mærke == mærke);
         }
 
         // POST: api/LocalList
