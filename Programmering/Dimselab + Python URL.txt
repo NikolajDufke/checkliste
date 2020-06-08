@@ -1,0 +1,9 @@
+https://github.com/dimselab/Webpack-template
+
+convert json to ts interface
+
+http://json2ts.com/
+
+Python/SenseHAT eksempler
+Sensor eksempler - https://trinket.io/python/e0ca7e1600 
+Weather Tepm/Humidity eksempel - https://trinket.io/python/e0ca7e1600
