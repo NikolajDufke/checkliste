@@ -6,4 +6,5 @@ http://json2ts.com/
 
 Python/SenseHAT eksempler
 Sensor eksempler - https://trinket.io/python/e0ca7e1600 
-Weather Tepm/Humidity eksempel - https://trinket.io/python/e0ca7e1600
+Weather Tepm/Humidity eksempel - https://trinket.io/python/c8a6c0cd73
+temp display change colour - https://trinket.io/python/4d71803f07
